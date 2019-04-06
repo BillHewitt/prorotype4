@@ -29,6 +29,21 @@ class PagesController < ApplicationController
   def perkbox
   end
 
+  def debt
+  end
+
+  def holiday
+  end
+
+  def wfh
+  end
+
+  def head
+  end
+
+  def yoga
+  end
+
   def index
   end
 

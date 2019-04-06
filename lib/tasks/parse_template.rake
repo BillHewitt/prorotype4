@@ -7,7 +7,7 @@ namespace :parse_template do
 
       #now we get all nested html elemnts (without footer, header naviagion)
 
-      page_inner_content = parse_page.css('body > *:not(footer#footer):not(script):not(.loader):not(.navbar-container):not(.back-to-top)')
+      page_inner_content = parse_page.css('body > *:not(footer#footer):not(script):not(.loader):not(.navbar-container:first):not(.back-to-top)')
       erb_file = File.open("#{Rails.root}/app/views/pages/#{page_name.underscore}.html.erb", 'w') { |f|
         f.write(page_inner_content.to_html)
       }

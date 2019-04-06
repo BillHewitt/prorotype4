@@ -9,3 +9,15 @@
 @import "custom/components";
 @import "user";
 @import "font-awesome";
+
+
+a {
+  font-weight: 500;
+  color: #000;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+}

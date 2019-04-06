@@ -26,6 +26,9 @@ class PagesController < ApplicationController
   def redeemed
   end
 
+  def perkbox
+  end
+
   def index
   end
 

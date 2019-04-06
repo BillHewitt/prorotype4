@@ -14,6 +14,18 @@ class PagesController < ApplicationController
   def learning
   end
 
+  def credit
+  end
+
+  def profile
+  end
+
+  def recognition
+  end
+
+  def redeemed
+  end
+
   def index
   end
 

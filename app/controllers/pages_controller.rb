@@ -32,6 +32,12 @@ class PagesController < ApplicationController
   def debt
   end
 
+  def coffee
+  end
+
+  def netflix
+  end
+
   def holiday
   end
 
@@ -44,7 +50,31 @@ class PagesController < ApplicationController
   def yoga
   end
 
+  def credits25
+  end
+
   def index
+  end
+
+  def sanctus
+  end
+
+  def medical
+  end
+
+  def beer
+  end
+
+  def holiday2
+  end
+
+  def credits50
+  end
+
+  def credits100
+  end
+
+  def hawaii
   end
 
   def static

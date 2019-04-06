@@ -19,5 +19,16 @@ Rails.application.routes.draw do
   get 'pages/wfh'
   get 'pages/head'
   get 'pages/yoga'
+  get 'pages/coffee'
+  get 'pages/netflix'
+  get 'pages/credits25'
+  get 'pages/sanctus'
+  get 'pages/medical'
+  get 'pages/dental'
+  get 'pages/beer'
+  get 'pages/holiday2'
+  get 'pages/credits50'
+  get 'pages/credits100'
+  get 'pages/hawaii'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

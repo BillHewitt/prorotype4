@@ -427,7 +427,7 @@ mrMaps,
                   <p>The main <code>&lt;div&gt;</code> requires a <code>min-height</code> to be set, so add a height <a href="css-utility-classes.html" target="_blank">utility class</a> like so: <code>class="min-vh-50"</code>.</p>
                   <p>For easy map positioning, provide an address for the center of the map in the <code>data-address</code> attribute on the same <code>&lt;div&gt;</code>.</p>
                   <p>Add an empty <code>&lt;div&gt;</code> with class <code>map-marker</code> to add a marker to the map. Add the <code>data-address</code> attribute and provide an address as the value.</p>
-                  <p>This will create a Map, center it at the provided address and add a marker at the specified address. This is the most basic functionality and will use the default marker image at <code>assets/img/map-marker.png</code>.</p>
+                  <p>This will create a Map, center it at the provided address and add a marker at the specified address. This is the most basic functionality and will use the default marker image at <code>template-assets/img/map-marker.png</code>.</p>
                   <pre><code class="language-html">&lt;div class="min-vh-50" data-maps-api-key="INSERT_YOUR_GOOGLE_MAPS_API_KEY_HERE" data-address="389 Greenpoint Ave, Crown Heights, Brooklyn New York" data-map-zoom="14"&gt;
   &lt;div class="map-marker" data-address="389 Greenpoint Ave, Crown Heights, Brooklyn, New York"&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -637,7 +637,7 @@ mrMaps,
                     <li>Markers contain Info Windows (see Info Windows section below).</li>
                   </ul>
                   <h5>Multiple Markers</h5>
-                  <p>In this example, each marker is positioned using an address, and the marker image will default to the asset located at <code>assets/img/map-marker.png</code>.</p>
+                  <p>In this example, each marker is positioned using an address, and the marker image will default to the asset located at <code>template-assets/img/map-marker.png</code>.</p>
                   <pre><code class="language-html">&lt;div data-maps-api-key="INSERT_YOUR_GOOGLE_MAPS_API_KEY_HERE" data-address="389 Greenpoint Ave, Crown Heights, Brooklyn New York" data-map-zoom="14"&gt;
   &lt;div class="map-marker" data-address="389 Greenpoint Ave, Crown Heights, Brooklyn, New York"&gt;&lt;/div&gt;
   &lt;div class="map-marker" data-address="2213 Montgomery Street, San Francisco, California"&gt;&lt;/div&gt;
@@ -671,7 +671,7 @@ mrMaps,
                       <p>Setting <code>data-marker-image</code> on the <code>div.map-marker</code> overrides the default set on the map <code>&lt;div&gt;</code> for that single map marker.</p>
                     </li>
                   </ul>
-                  <p>If <code>data-marker-image</code> is not specified on either the marker <code>div.map-marker</code> or the main map <code>&lt;div&gt;</code>, the default <code>assets/img/map-marker.png</code> will be used for all markers on the map.</p>
+                  <p>If <code>data-marker-image</code> is not specified on either the marker <code>div.map-marker</code> or the main map <code>&lt;div&gt;</code>, the default <code>template-assets/img/map-marker.png</code> will be used for all markers on the map.</p>
 
                 </div>
               </article>
@@ -696,7 +696,7 @@ mrMaps,
             &lt;h5&gt;Info windows are great!&lt;/h5&gt;
           &lt;/div&gt;
           &lt;div class="col-4"&gt;
-            &lt;img alt="Logo" class="w-100" src="assets/img/logo.svg"&gt;
+            &lt;img alt="Logo" class="w-100" src="template-assets/img/logo.svg"&gt;
           &lt;/div&gt;
           &lt;div class="col-8 pb-2"&gt;
             &lt;p&gt;

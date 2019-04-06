@@ -18,10 +18,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap', '~> 4.3.1'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
-
-gem 'bootstrap-tooltip-rails'
-
 gem 'popper_js', '~> 1.14.5'
+
+# gem 'bootstrap-tooltip-rails'
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

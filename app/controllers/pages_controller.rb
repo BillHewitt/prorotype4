@@ -113,6 +113,9 @@ class PagesController < ApplicationController
   def bill
   end
 
+  def premium
+  end
+
   def static
     render params[:page].underscore.to_s
   end

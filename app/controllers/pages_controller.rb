@@ -77,6 +77,42 @@ class PagesController < ApplicationController
   def hawaii
   end
 
+  def asos
+  end
+
+  def peer
+  end
+
+  def adidas
+  end
+
+  def netflix2
+  end
+
+  def nike
+  end
+
+  def virgin
+  end
+
+  def apple
+  end
+
+  def john
+  end
+
+  def asos2
+  end
+
+  def tesco
+  end
+
+  def franco
+  end
+
+  def bill
+  end
+
   def static
     render params[:page].underscore.to_s
   end

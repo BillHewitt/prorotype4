@@ -22,6 +22,17 @@
                 <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon-1">
               </div>
             </form>
+            <li class="nav-item">  
+              <% if current_page?(pages_credit_path) -%>
+                <%= link_to pages_credit_path, class: "nav-link nav-link-icon active" do %>
+                  <i class="fa fa-bell" aria-hidden="true"></i>
+                <% end %>
+              <% else %>
+                <%= link_to pages_credit_path, class: "nav-link nav-link-icon" do %>
+                  <i class="fa fa-bell" aria-hidden="true"></i>
+                <% end %>
+              <% end %>
+            </li>
             <div class="dropdown ml-2">
               <img src="/avatar.png" alt="User" class="avatar avatar-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="dropdown-menu dropdown-menu-right dropdown-content">
@@ -122,12 +133,6 @@
                             <div class="text-body ml-3">
                               <span>Learning & Development</span>
                               <div class="text-small text-muted">Access our carefully curated partners to help you learn, grow and develop</div>
-                            </div>
-                          </a>
-                          <a href="#" class="list-group-item list-group-item-action d-flex align-items-center p-3">
-                            <div class="text-body ml-3">
-                              <span>Connect</span>
-                              <div class="text-small text-muted">Only show to managers</div>
                             </div>
                           </a>
                         </div>

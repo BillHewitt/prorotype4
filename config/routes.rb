@@ -30,5 +30,18 @@ Rails.application.routes.draw do
   get 'pages/credits50'
   get 'pages/credits100'
   get 'pages/hawaii'
+  get 'pages/asos'
+  get 'pages/peer'
+  get 'pages/adidas'
+  get 'pages/apple'
+  get 'pages/netflix2'
+  get 'pages/nike'
+  get 'pages/virgin'
+  get 'pages/apple'
+  get 'pages/john'
+  get 'pages/asos2'
+  get 'pages/tesco'
+  get 'pages/franco'
+  get 'pages/bill'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -23,9 +23,41 @@
 //= require theme.js
 //= require_self
 
-$(document).ready(function () {
+
+$(window).on('load', function () {
+
   $('body').addClass('loaded')
-})
-// window.addEventListener("load", function () {
-//   document.querySelector('body').classList.add('loaded');
-// });
+
+  if ($('.perks_page'.length > 0)) {
+    // fire only if .perks_page class present
+
+    // make filter by Branding ('Just for you' button in our case)
+    // you can change this default to * or Digital
+    let defaultFilterName = 'Branding'
+
+    $('div[data-isotope-id="projects"]').isotope({
+      filter: `[data-category="${defaultFilterName}"]`
+    })
+    // add class to make button gray, we can add this in html but i preffer move here to have possibility cahnge in onle place
+    $(`[data-isotope-id="projects"] li a[data-filter="${defaultFilterName}"]`).addClass('active')
+
+    $('[data-isotope-id="projects"] li a').each(function () {
+      $(this).on('click touch touchstart', function () {
+        $('[data-isotope-id="projects"] li a').removeClass('active')
+        $(this).addClass('active')
+
+        var filter_selector = $(this).attr('data-filter')
+        if (filter_selector != '*') {
+          filter_selector = `[data-category="${filter_selector}"]`
+        }
+        $('div[data-isotope-id="projects"]').isotope(
+          {
+            filter: filter_selector
+          }
+        )
+
+      })
+    })
+  }
+
+});

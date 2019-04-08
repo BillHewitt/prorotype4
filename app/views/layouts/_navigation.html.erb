@@ -47,9 +47,9 @@
                 <% end %>
 
                 <% if current_page?(pages_recognition_path) -%>
-                  <a href="/pages/recognition" class="dropdown-item active">My Recognition</a>
+                  <a href="/pages/recognition" class="dropdown-item active">My Rewards & Recognition</a>
                 <% else %>
-                  <a href="/pages/recognition" class="dropdown-item">My Recognition</a>
+                  <a href="/pages/recognition" class="dropdown-item">My Rewards & Recognition</a>
                 <% end %>
 
                 <% if current_page?(pages_redeemed_path) -%>
@@ -74,38 +74,6 @@
           <div class="collapse navbar-collapse justify-content-between order-lg-2">
             <div class="py-2 py-lg-0">
               <ul class="navbar-nav">
-
-                 <% if current_page?(pages_hub_path) -%>
-                  
-                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link active">Company Hub</a>
-                  </li>
-
-                <% else %>
-
-                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link">Company Hub</a>
-                  </li>
-
-                <% end %>
-
-                <% if current_page?(pages_perks_path) -%>
-                  
-                  <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link active">Company Perks</a>
-                  </li>
-
-                <% else %>
-
-                  <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link">Company Perks</a>
-                  </li>
-
-                <% end %>
-
-
-               
-
-
-              
-
-
 
                 <li class="nav-item dropdown">
 
@@ -145,6 +113,31 @@
                     </div>
                   </div>
                 </li>
+
+                <% if current_page?(pages_perks_path) -%>
+                  
+                  <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link active">Your Perks</a>
+                  </li>
+
+                <% else %>
+
+                  <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link">Your Perks</a>
+                  </li>
+
+                <% end %>
+
+                <% if current_page?(pages_hub_path) -%>
+                  
+                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link active">The Hub</a>
+                  </li>
+
+                <% else %>
+
+                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link">The Hub</a>
+                  </li>
+
+                <% end %>
+                
               </ul>
             </div>
           </div>

@@ -116,6 +116,9 @@ class PagesController < ApplicationController
   def premium
   end
 
+  def spotify
+  end
+
   def static
     render params[:page].underscore.to_s
   end

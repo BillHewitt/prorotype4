@@ -28,16 +28,19 @@ $(window).on('load', function () {
 
   $('body').addClass('loaded')
 
-  if ($('.perks_page'.length > 0)) {
+  if ($('.control_isotope').length > 0) {
     // fire only if .perks_page class present
-
+    // console.log('asdasd')
     // make filter by Branding ('Just for you' button in our case)
     // you can change this default to * or Digital
     let defaultFilterName = 'Branding'
 
-    $('div[data-isotope-id="projects"]').isotope({
-      filter: `[data-category="${defaultFilterName}"]`
-    })
+    $('div[data-isotope-id="projects"]').isotope(
+      {
+        filter: `[data-category="${defaultFilterName}"]`
+      }
+    )
+
     // add class to make button gray, we can add this in html but i preffer move here to have possibility cahnge in onle place
     $(`[data-isotope-id="projects"] li a[data-filter="${defaultFilterName}"]`).addClass('active')
 
@@ -55,9 +58,7 @@ $(window).on('load', function () {
             filter: filter_selector
           }
         )
-
       })
     })
   }
-
 });

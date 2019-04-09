@@ -16,6 +16,37 @@
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <script>
+      (function() {
+        $(document).on('click', function (e){
+          var collapse1_opened = $('#collapseExample1').hasClass('show');
+        
+          if(!$(e.target).closest('#collapseExample1').length &&
+              !$(e.target).is('#collapseExample1') &&
+              collapse1_opened === true){
+                  $('#collapseExample1').collapse('toggle');
+          }
+
+          var collapse2_opened = $('#collapseExample2').hasClass('show');
+        
+          if(!$(e.target).closest('#collapseExample2').length &&
+              !$(e.target).is('#collapseExample2') &&
+              collapse2_opened === true){
+                  $('#collapseExample2').collapse('toggle');
+          }
+
+          var collapse3_opened = $('#collapseExample3').hasClass('show');
+        
+          if(!$(e.target).closest('#collapseExample3').length &&
+              !$(e.target).is('#collapseExample3') &&
+              collapse3_opened === true){
+                  $('#collapseExample3').collapse('toggle');
+          }
+
+        });
+      })();
+    </script>
+
 
   </body>
 </html>

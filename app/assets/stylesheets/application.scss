@@ -111,3 +111,20 @@ span.medium {
     min-height: 17rem;
   }
 }
+
+.row.tiny {
+  margin-top: -30px;
+padding-bottom: 30px;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #9f9f9f;
+  border-color: #9f9f9f;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #848484;
+  border-color: #848484;
+}

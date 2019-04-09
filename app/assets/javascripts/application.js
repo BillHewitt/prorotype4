@@ -33,16 +33,16 @@ $(window).on('load', function () {
     // console.log('asdasd')
     // make filter by Branding ('Just for you' button in our case)
     // you can change this default to * or Digital
-    let defaultFilterName = 'Branding'
+    var defaultFilterName = 'Branding'
 
     $('div[data-isotope-id="projects"]').isotope(
       {
-        filter: `[data-category="${defaultFilterName}"]`
+        filter: '[data-category="' + defaultFilterName + '"]'
       }
     )
 
     // add class to make button gray, we can add this in html but i preffer move here to have possibility cahnge in onle place
-    $(`[data-isotope-id="projects"] li a[data-filter="${defaultFilterName}"]`).addClass('active')
+    $('[data-isotope-id="projects"] li a[data-filter="' + defaultFilterName + '"]').addClass('active')
 
     $('[data-isotope-id="projects"] li a').each(function () {
       $(this).on('click touch touchstart', function () {
@@ -51,7 +51,7 @@ $(window).on('load', function () {
 
         var filter_selector = $(this).attr('data-filter')
         if (filter_selector != '*') {
-          filter_selector = `[data-category="${filter_selector}"]`
+          filter_selector = '[data-category="' + filter_selector + '"]'
         }
         $('div[data-isotope-id="projects"]').isotope(
           {

@@ -28,7 +28,7 @@ $(window).on('load', function () {
 
   $('body').addClass('loaded')
 
-  if ($('.perks_page').length > 0) {
+  if ($('.control_isotope').length > 0) {
     // fire only if .perks_page class present
     // console.log('asdasd')
     // make filter by Branding ('Just for you' button in our case)

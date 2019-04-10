@@ -45,5 +45,6 @@ Rails.application.routes.draw do
   get 'pages/bill'
   get 'pages/premium'
   get 'pages/spotify'
+  get 'pages/home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

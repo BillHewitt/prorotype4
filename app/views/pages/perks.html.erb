@@ -2,23 +2,21 @@
       <div class="container">
   <div class="col-xl-8 col-lg-10">
       <h1 class="display-5">Perks</h1>
-      <p class="lead mb-0">Here's the perks your company and manager have given you to show they care, to celebrate your successes and to embrace your company values.</p>
+      <p class="lead mb-0">Here are the perks your company and manager have given you to show they care, to celebrate your successes and to embrace your company values.</p>
     </div>
   </div>
 </div>
 
-
-
-<section class="pt-0 control_isotope">
+<section class="pt-0">
   <div class="container">
     <div class="row mb-4">
       <div class="col col-md-12">
-        <ul data-isotope-id="projects" class="nav mb-3">
+        <ul data-isotope-filters data-isotope-id="projects" class="nav mb-3">
           <li class="nav-item">
-            <a href="#" class="nav-link btn" data-filter="*">See All</a>
+            <a href="#" class="nav-link btn active" data-filter="*">See All</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link btn " data-filter="Branding">Just for you</a>
+            <a href="#" class="nav-link btn" data-filter="Branding">Just for you</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link btn" data-filter="Digital">For your teams</a>
@@ -31,7 +29,7 @@
       </div>
     </div>
     <%= render 'layouts/filtersperks' %>
-    <div class="row" data-isotope-id="projects">
+    <div class="row" data-isotope-collection data-isotope-id="projects">
       <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Branding">
         <a href="/pages/asos">
           <img src="/placeholder.jpg" alt="Volkswagen Australia" class="rounded mb-3">
@@ -56,7 +54,7 @@
       <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Digital">
         <a href="/pages/peer">
           <img src="/placeholder.jpg" alt="Tribe" class="rounded mb-3">
-          <h4 class="mb-0">Team Lunch</h4>
+          <h4 class="mb-0">Team Lunch </h4>
           <div class="text-small text-muted">Incentive from your manager <i class="fa fa-lock" aria-hidden="true"></i></div>
         </a>
       </div>
@@ -77,7 +75,14 @@
       <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
         <a href="/pages/sanctus">
           <img src="/placeholder.jpg" alt="Beker EV" class="rounded mb-3">
-          <h4 class="mb-0">Mental Health</h4>
+          <h4 class="mb-0">Sanctus</h4>
+          <div class="text-small text-muted">Gifted by your company</div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
+        <a href="#">
+          <img src="/placeholder.jpg" alt="Beker EV" class="rounded mb-3">
+          <h4 class="mb-0">Dogs At Work</h4>
           <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
@@ -109,18 +114,11 @@
           <div class="text-small text-muted">Incentive from your company <i class="fa fa-lock" aria-hidden="true"></i></div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Digital">
-        <a href="/pages/head">
-          <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
-          <h4 class="mb-0">Headspace</h4>
-          <div class="text-small text-muted">Gifted by your company</div>
-        </a>
-      </div>
       <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Branding">
         <a href="/pages/wfh">
           <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
-          <h4 class="mb-0">WFH Fridays</h4>
-          <div class="text-small text-muted">Gifted by your manager</div>
+          <h4 class="mb-0">Headspace</h4>
+          <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
       <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Branding">
@@ -140,3 +138,5 @@
     </div>
   </div>
 </section>
+
+

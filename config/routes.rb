@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'pages#static', page: 'index'
+  root 'pages#static', page: 'home'
 
   get ':page', to: 'pages#static'
 

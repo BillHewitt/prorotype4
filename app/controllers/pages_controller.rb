@@ -122,6 +122,9 @@ class PagesController < ApplicationController
   def financial2
   end
 
+  def marketplace
+  end
+
   def static
     render params[:page].underscore.to_s
   end

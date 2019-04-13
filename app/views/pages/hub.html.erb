@@ -366,14 +366,22 @@
                                   </div>
 
                                   <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <input class="form-check-input" name="cod" value="1" type="checkbox" value="" id="defaultCheck1">
                                   <label class="form-check-label" for="defaultCheck1">
                                     Would you like to include a gift?
                                   </label>
-                                  <br>
-                                </div>
+
+                                  <select class="form-control" id='select'>
+                                      <option>Send one of your own gifted perks</option>
+                                      <option>Purchase a gift from the marketplace</option>
+                                      <option>Create a custom gift</option>
+                                    </select>
+
                                   
-                                  <br>
+                                </div>
+                                <br>
+                                  
+                                  
                                   <a id="link3" class="btn btn-primary" href="#">Next</a>
                             </div>
                             <div id="content3">
@@ -381,7 +389,7 @@
                                 <h4 class="h3 mb-2">Public or private</h4>
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">How would you like to recognise them?</label>
-                                    
+
                                     <select class="form-control" id="exampleFormControlSelect1">
                                       <option>Just send a message privately to them</option>
                                       <option>Publish to the hub for whole team to see</option>
@@ -389,7 +397,7 @@
                                     </select>
                                   </div>
                                   <p class="text-muted small">Don't worry, we won't display any attached gifts if you publish to the hub</p>
-                                  <a class="btn btn-primary" href="/pages/hub">Send recognition</a>
+                                  <a class="btn btn-primary" href="/pages/home">Send recognition</a>
                             </div>
                         </div>
 

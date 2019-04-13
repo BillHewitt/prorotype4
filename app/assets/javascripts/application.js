@@ -24,6 +24,8 @@
 //= require_self
 
 
+    
+
 $(window).on('load', function () {
 
   $('body').addClass('loaded')

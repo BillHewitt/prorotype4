@@ -128,6 +128,9 @@ class PagesController < ApplicationController
   def notifications
   end
 
+  def feedback
+  end
+
   def static
     render params[:page].underscore.to_s
   end

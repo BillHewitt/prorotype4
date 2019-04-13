@@ -24,7 +24,32 @@
 //= require_self
 
 
-    
+$('[name="cod"]').on('change', function() {
+  $('#select').toggle(this.checked);
+}).change();
+
+
+
+function replace() { 
+document.getElementById("div1").style.display="none"; 
+document.getElementById("div2").style.display="block"; 
+}   
+
+$(document).ready(function(){
+  $("#link1").click(function(){
+     $('#content1').fadeIn('fast');
+     $('#content2').fadeOut('fast');
+  });
+  $("#link2").click(function(){
+     $('#content1').fadeOut('fast');
+     $('#content2').fadeIn('fast');
+  });
+  $("#link3").click(function(){
+     $('#content2').fadeOut('fast');
+     $('#content3').fadeIn('fast');
+  });
+});   
+
 
 $(window).on('load', function () {
 
@@ -64,3 +89,6 @@ $(window).on('load', function () {
     })
   }
 });
+
+
+  

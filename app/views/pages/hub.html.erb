@@ -7,58 +7,49 @@
   </div>
 </div>
 
-<section class="pt-0">
-  <div class="container">
-    <div class="row mb-4">
-      <div class="col col-md-12">
-        <ul data-isotope-filters data-isotope-id="projects" class="nav mb-3">
-          <li class="nav-item">
-            <a href="#" class="nav-link btn active" data-filter="*">Your Teams</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link btn" data-filter="Branding">Your Company</a>
-          </li>
-        </ul>
-        <hr>
-      </div>
-    </div>
-
-
-
-</div>
-
-<section class="narrow">
-      <div class="container">
+<div class="container">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link btn active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Your Teams</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Your Company</a>
+    </li>
+  </ul>
+  <hr>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <div class="row mb-4">
           <div class="col-md-8 col-lg-8">
             <div class="pr-lg-4">
+              <br>
               <%= render 'layouts/filtershub' %>
               <div class="card shadow border-0">
-        <div class="card-body py-5">
-          <div class="row">
-            <div class="col-md-2">
-              <span class="avatar avatar-lg m-1">
-                    <img src="/avatar.png" class="avatar avatar-lg m-1">
-                  </span>
-            </div>
-            <div class="col-md-10">
-              <h4>Recognition</h4>
-              <p class="text-muted small">Company Value from Paul Schulz · 2 days ago</p>
-              <p class="">
-                Big big congrats on a couple fronts today. Firstly, thanks all around to the team responsible for getting the HiBoB API integration across the line. It's all ready to go into production their side.  Dates to be confirmed but all happy and integrated well now - looking at next week probably but tbc.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card-footer">
-          <span class="float-right">
-            <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add comment"><i class="fa fa-comments mr-3"></i>
+                <div class="card-body py-5">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <span class="avatar avatar-lg m-1">
+                            <img src="/avatar.png" class="avatar avatar-lg m-1">
+                          </span>
+                    </div>
+                    <div class="col-md-10">
+                      <h4>Recognition</h4>
+                      <p class="text-muted small">Company Value from Paul Schulz · 2 days ago</p>
+                      <p class="">
+                        Big big congrats on a couple fronts today. Firstly, thanks all around to the team responsible for getting the HiBoB API integration across the line. It's all ready to go into production their side.  Dates to be confirmed but all happy and integrated well now - looking at next week probably but tbc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <span class="float-right">
+                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add comment"><i class="fa fa-comments mr-3"></i>
 
-             </a><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"><i class="fa fa-smile-o mr-3"></i>
-          </a></span><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"></a>
-        
-        </div>
-      </div>
+                     </a><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"><i class="fa fa-smile-o mr-3"></i>
+                  </a></span><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"></a>
+                
+                </div>
+              </div>
             </div>
             <div class="pr-lg-4">
               <div class="card shadow border-0">
@@ -120,11 +111,13 @@
                 </div>
               </div>
             </div>
-            
           </div>
 
-          <div class="col-md-4 col-lg-4 d-none d-md-block">
-            <div class="sticky-top">
+
+
+          <div class="col-md-4 col-lg-4">
+          
+              <div class="sticky-top">
             <div class="card-body">
                 <h4 class="text-default">Have your say</h4>
                 <p class="mt-3">Send anonymous feedback to help make your team a better place to work</p>
@@ -166,6 +159,163 @@
 
             
           </div>
+
+
+
+
+          </div>
         </div>
-      </div>
-    </section>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      
+      <div class="row mb-4">
+          <div class="col-md-8 col-lg-8">
+            <div class="pr-lg-4">
+              <br>
+              <%= render 'layouts/filtershub' %>
+              <div class="card shadow border-0">
+                <div class="card-body py-5">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <span class="avatar avatar-lg m-1">
+                            <img src="/avatar.png" class="avatar avatar-lg m-1">
+                          </span>
+                    </div>
+                    <div class="col-md-10">
+                      <h4>Announcement</h4>
+                      <p class="text-muted small">Announcement from Paul Schulz · 2 days ago</p>
+                      <p class="">
+                        Here's a companywide announcement...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <span class="float-right">
+                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add comment"><i class="fa fa-comments mr-3"></i>
+
+                     </a><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"><i class="fa fa-smile-o mr-3"></i>
+                  </a></span><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"></a>
+                
+                </div>
+              </div>
+            </div>
+            <div class="pr-lg-4">
+              <div class="card shadow border-0">
+                <div class="card-body py-5">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <span class="avatar rounded-circle">
+                            <img src="/avatar.png" class="avatar avatar-lg m-1">
+                          </span>
+                    </div>
+                    <div class="col-md-10">
+                      <i class="fa fa-thumb-tack mr-3 float-right" aria-hidden="true"></i>
+                      <h4>Survey Feedback</h4>
+                      <p class="text-muted small">Feedback from Louise · Just Now</p>
+                      <p class="">
+                        Here's some companywide feedback from our HR department.
+                      </p>
+                        <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <span class="float-right">
+                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add comment"><i class="fa fa-comments mr-3"></i>
+
+                     </a><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"><i class="fa fa-smile-o mr-3"></i>
+                  </a></span><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"></a>
+                </div>
+              </div>
+            </div>
+            
+
+          <div class="pr-lg-4">
+              <div class="card shadow border-0">
+                <div class="card-body py-5">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <span class="avatar rounded-circle">
+                            <img src="/avatar.png" class="avatar avatar-lg m-1">
+                          </span>
+                    </div>
+                    <div class="col-md-10">
+                      <i class="fa fa-thumb-tack mr-3 float-right" aria-hidden="true"></i>
+                      <h4>Announcement</h4>
+                      <p class="text-muted small">Announcement from Louise · Just Now</p>
+                      <p class="">
+                        Here's a companywide announcement for everyone to read and comment on
+                      </p>
+                        <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <span class="float-right">
+                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add comment"><i class="fa fa-comments mr-3"></i>
+
+                     </a><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"><i class="fa fa-smile-o mr-3"></i>
+                  </a></span><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4 col-lg-4">
+          
+              <div class="sticky-top">
+            <div class="card-body">
+                <h4 class="text-default">Have your say</h4>
+                <p class="mt-3">Send anonymous feedback to help make your company a better place to work</p>
+                      <a href="">
+                        <button type="button" class="btn btn-primary">Send feedback</button>
+                      </a>
+            </div>
+            <hr>
+            <div class="card-body">
+                <h4 class="text-default">Recognise Someone</h4>
+                <p class="description">Time to make a colleague's day!</p>
+
+                      <ul class="avatars">
+                    <li>
+                      <img src="/avatar.png" alt="Avatar" class="avatar">
+                    </li>
+                    <li>
+                      <img src="/avatar.png" alt="Avatar" class="avatar">
+                    </li>
+                    <li>
+                      <img src="/avatar.png" alt="Avatar" class="avatar">
+                    </li>
+                    <li>
+                      <img src="/avatar.png" alt="Avatar" class="avatar">
+                    </li>
+                  </ul>
+                  <br>
+                      <a href="">
+                        <button type="button" class="btn btn-primary">Recognise Someone</button>
+                      </a>
+            </div>
+            <hr>
+           
+            
+
+              
+
+
+
+            
+          </div>
+
+
+
+
+          </div>
+
+
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+  </div>
+</div>

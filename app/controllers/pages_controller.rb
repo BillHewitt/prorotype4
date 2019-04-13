@@ -125,6 +125,9 @@ class PagesController < ApplicationController
   def marketplace
   end
 
+  def notifications
+  end
+
   def static
     render params[:page].underscore.to_s
   end

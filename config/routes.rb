@@ -49,5 +49,6 @@ Rails.application.routes.draw do
   get 'pages/financial2'
   get 'pages/financial3'
   get 'pages/marketplace'
+  get 'pages/notifications'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

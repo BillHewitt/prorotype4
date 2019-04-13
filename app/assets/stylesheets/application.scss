@@ -150,3 +150,11 @@ margin-bottom: 40px;
 .row.gap {
   padding-top:30px;
 }
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #797a7c;
+  border-color: #797a7c;
+}
+

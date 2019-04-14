@@ -40,7 +40,7 @@
                   <a href="#" class="dropdown-item">My Rewards & Recognitions</a>
                 <% end %>
 
-                <a href="/pages/profile" class="dropdown-item">My Purchases & Redemptions</a>
+                <a href="/pages/profile" class="dropdown-item">My Purchases & Codes</a>
 
                 
 
@@ -63,17 +63,17 @@
 
                 <% if current_page?(pages_hub_path) -%>
                   
-                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link active">The Hub</a>
+                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link active">Company Hub</a>
                   </li>
 
                 <% else %>
 
-                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link">The Hub</a>
+                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link">Company Hub</a>
                   </li>
 
                 <% end %>
 
-                <% if current_page?(pages_perks_path) -%>
+                <% if current_page?(pages_perks_path) or current_page?(pages_holiday2_path) or current_page?(pages_medical_path) or current_page?(pages_dental_path) or current_page?(pages_beer_path) or current_page?(pages_asos_path) or current_page?(pages_yoga_path) or current_page?(pages_peer_path) or current_page?(pages_head_path) or current_page?(pages_netflix_path) or current_page?(pages_sanctus_path) or current_page?(pages_mental_path) -%>
                   
                   <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link active">Gifted Perks</a>
                   </li>
@@ -111,7 +111,7 @@
                           </a>
                           <a href="/pages/premium" class="list-group-item list-group-item-action d-flex align-items-center p-3">
                             <div class="text-body ml-3">
-                              <span><h5>Selected Workplace Benefits</h5></span>
+                              <span><h5>Exclusive Workplace Benefits</h5></span>
                               <div class="text-small text-muted">Making usually hard-to-get workplace benefits accessible for everyone.</div>
                             </div>
                           </a>

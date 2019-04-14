@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'pages/health'
   root 'pages#static', page: 'home'
 
   get ':page', to: 'pages#static'
@@ -57,5 +58,17 @@ Rails.application.routes.draw do
   get 'pages/amazon'
   get 'pages/audible'
   get 'pages/udemy'
+  get 'pages/physio'
+  get 'pages/health'
+  get 'pages/critical'
+  get 'pages/dentalcashplan'
+  get 'pages/financialadvice'
+  get 'pages/healthcashplan'
+  get 'pages/mental'
+  get 'pages/health'
+  get 'pages/medinsurance'
+  get 'pages/healthinsurance'
+  get 'pages/eap'
+  get 'pages/councelling'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -149,6 +149,35 @@ class PagesController < ApplicationController
   def udemy
   end
 
+  def physio
+  end
+
+  def health
+  end
+
+  def critical
+  end
+
+  def dentalcashplan
+  end
+
+  def financialadvice
+  end
+
+  def healthcashplan
+  end
+
+  def healthinsurance
+  end
+
+  def mental
+  end
+
+  def medinsurance
+  end
+
+  
+
   def static
     render params[:page].underscore.to_s
   end

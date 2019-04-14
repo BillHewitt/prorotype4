@@ -40,12 +40,14 @@
                   <a href="/pages/recognition" class="dropdown-item">My Rewards & Recognitions</a>
                 <% end %>
 
-                <a href="/pages/profile" class="dropdown-item">My Purchases & Codes</a>
-
-                
+                <% if current_page?(pages_purchases_path) -%>
+                  <a href="/pages/purchases" class="dropdown-item active">My Purchases & Codes</a>
+                <% else %>
+                  <a href="/pages/purchases" class="dropdown-item">My Purchases & Codes</a>
+                <% end %>                
 
                 <a class="dropdown-item" href="#">Help & Support</a>
-                <a class="dropdown-item" href="#">Logout</a>
+                <a class="dropdown-item" href="/pages/splash">Logout</a>
               </div>
             </div>
             <div class="ml-2">

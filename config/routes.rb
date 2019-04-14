@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get 'pages/health'
-  root 'pages#static', page: 'home'
+  root 'pages#static', page: 'splash'
 
   get ':page', to: 'pages#static'
 
@@ -70,5 +70,7 @@ Rails.application.routes.draw do
   get 'pages/healthinsurance'
   get 'pages/eap'
   get 'pages/councelling'
+  get 'pages/purchases'
+  get 'pages/splash'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

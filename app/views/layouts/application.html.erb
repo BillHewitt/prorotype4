@@ -9,7 +9,12 @@
   </head>
 
   <body>
-    <%= render 'layouts/navigation' %>
+
+    <% if current_page?(pages_splash_path) -%>
+
+    <% else %>
+      <%= render 'layouts/navigation' %>
+    <% end %>
 
 
       <%= yield %>

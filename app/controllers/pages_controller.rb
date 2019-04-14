@@ -176,7 +176,12 @@ class PagesController < ApplicationController
   def medinsurance
   end
 
-  
+  def purchases
+  end
+
+  def splash
+  end
+
 
   def static
     render params[:page].underscore.to_s

@@ -181,11 +181,12 @@ display:none;
 
 }
 
-.border-bottom.pb-3.mb-3 {
-  padding: 1.5rem;
-}
-
-.col-sm-4.col-form-label.bold {
+.col-sm-6.col-form-label.bold {
   font-weight: 900;
   color: #000;
 }
+
+.accordion-panel-title[aria-expanded="true"] > *, .accordion-panel-title:hover > * {
+  color: #747e81;
+}
+

@@ -131,6 +131,24 @@ class PagesController < ApplicationController
   def feedback
   end
 
+  def youtube
+  end
+
+  def lynda
+  end
+
+  def skillshare
+  end
+
+  def amazon
+  end
+
+  def audible
+  end
+
+  def udemy
+  end
+
   def static
     render params[:page].underscore.to_s
   end

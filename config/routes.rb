@@ -51,5 +51,11 @@ Rails.application.routes.draw do
   get 'pages/marketplace'
   get 'pages/notifications'
   get 'pages/feedback'
+  get 'pages/youtube'
+  get 'pages/lynda'
+  get 'pages/skillshare'
+  get 'pages/amazon'
+  get 'pages/audible'
+  get 'pages/udemy'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -10,7 +10,7 @@
 
   <body>
 
-    <% if current_page?(pages_splash_path) -%>
+    <% if current_page?(root_path) or current_page?(pages_signup1_path) or current_page?(pages_signup2_path) or current_page?(pages_signup3_path) or current_page?(pages_signup4_path) or current_page?(pages_splash_path)  -%>
 
     <% else %>
       <%= render 'layouts/navigation' %>

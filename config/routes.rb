@@ -72,5 +72,10 @@ Rails.application.routes.draw do
   get 'pages/councelling'
   get 'pages/purchases'
   get 'pages/splash'
+  get 'pages/signup1'
+  get 'pages/signup2'
+  get 'pages/signup3'
+  get 'pages/signup4'
+  get 'pages/signup5'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

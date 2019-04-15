@@ -182,6 +182,20 @@ class PagesController < ApplicationController
   def splash
   end
 
+  def signup1
+  end
+
+  def signup2
+  end
+
+  def signup3
+  end
+
+  def signup4
+  end
+
+  def signup5
+  end
 
   def static
     render params[:page].underscore.to_s

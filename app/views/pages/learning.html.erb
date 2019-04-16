@@ -1,6 +1,5 @@
 <div class="row pt-5 py-5 layer-2">
       <div class="container">
-                <%= render 'layouts/breadcrumblearning' %>
   <div class="col-xl-8 col-lg-10">
       <h1 class="display-5">Learning & Development</h1>
       <p class="lead mb-0">Access our carefully curated partners to help you learn, grow and develop both in and out of work.</p>
@@ -10,7 +9,31 @@
 
 <section class="pt-0">
   <div class="container">
-    <br>
+    <div class="row mb-4">
+      <div class="col col-md-12">
+        <ul data-isotope-filters data-isotope-id="projects" class="nav mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link btn active" data-filter="*">See All</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link btn" data-filter="Branding">Books</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link btn" data-filter="Digital">Online Courses</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link btn" data-filter="">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link btn" data-filter="">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link btn" data-filter="">Tuition</a>
+          </li>
+        </ul>
+        <hr>
+      </div>
+    </div>
 
     <%= render 'layouts/filterslearning' %>
 
@@ -52,5 +75,6 @@
         </a>
       </div>
     </div>
+    
   </div>
 </section>

@@ -28,89 +28,107 @@
 
 <section class="pt-0">
   <div class="container">
-    <br>
+    <div class="row mb-4">
+      <div class="col col-md-12">
+        <ul data-isotope-filters data-isotope-id="projects" class="nav mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link btn active" data-filter="*">See All</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link btn" data-filter="Health">Health Promotion</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link btn" data-filter="Support">Employee Support</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link btn" data-filter="Insurance">Insurance Initiatives</a>
+          </li>
+        </ul>
+        <hr>
+      </div>
+    </div>
     <%= render 'layouts/filterspremium' %>
 
 
     <div class="row" data-isotope-collection data-isotope-id="projects">
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Branding">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Support">
         <a href="/pages/debt">
           <img src="/placeholder.jpg" alt="Volkswagen Australia" class="rounded mb-3">
           <h5 class="mb-0"><strike>Debt Management</strike></h5>
           <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Health">
         <a href="/pages/medical">
           <img src="/placeholder.jpg" alt="Go Commerce" class="rounded mb-3">
           <h5 class="mb-0"><strike>Medical</strike></h5>
           <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Branding">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Support">
         <a href="/pages/financialadvice">
           <img src="/placeholder.jpg" alt="Oculus Go" class="rounded mb-3">
           <h5 class="mb-0">Financial Advice</h5>
           <div class="text-small text-muted">From <i class="fa fa-diamond" aria-hidden="true"></i> 10 Credits/£</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Digital">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Support">
         <a href="/pages/councelling">
           <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
           <h5 class="mb-0"><strike>Councelling Online</strike></h5>
           <div class="text-small text-muted">Gifted by Perkbox</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Digital">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Support">
         <a href="/pages/eap">
           <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
           <h5 class="mb-0"><strike>EAP</strike></h5>
           <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Health">
         <a href="/pages/purchases">
           <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
           <h5 class="mb-0"><strike>Dental Cashplan</strike></h5>
           <div class="text-small text-muted">You purchased a 1 year licence</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Insurance">
         <a href="/pages/medinsurance">
           <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
           <h5 class="mb-0">Private Medical Insurance</h5>
           <div class="text-small text-muted">From <i class="fa fa-diamond" aria-hidden="true"></i> 10 Credits/£</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Health">
         <a href="/pages/healthcashplan">
           <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
           <h5 class="mb-0">Health Cashplan</h5>
           <div class="text-small text-muted">From <i class="fa fa-diamond" aria-hidden="true"></i> 10 Credits/£</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Insurance">
         <a href="/pages/healthinsurance">
           <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
           <h5 class="mb-0">Health Insurance</h5>
           <div class="text-small text-muted">From <i class="fa fa-diamond" aria-hidden="true"></i> 10 Credits/£</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Insurance">
         <a href="/pages/critical">
           <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
           <h5 class="mb-0">Critical Illness Insurance</h5>
           <div class="text-small text-muted">From <i class="fa fa-diamond" aria-hidden="true"></i> 10 Credits/£</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Digital">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Health">
         <a href="/pages/mental">
           <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
           <h5 class="mb-0"><strike>Mental Health</strike></h5>
           <div class="text-small text-muted">Gifted by Perkbox</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Digital">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Health">
         <a href="/pages/physio">
           <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
           <h5 class="mb-0">Physiotherapy</h5>

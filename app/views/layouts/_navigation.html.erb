@@ -44,7 +44,13 @@
                   <a href="/pages/purchases" class="dropdown-item active">My Purchases & Codes</a>
                 <% else %>
                   <a href="/pages/purchases" class="dropdown-item">My Purchases & Codes</a>
-                <% end %>                
+                <% end %>    
+
+                <% if current_page?(pages_recognition_path) -%>
+                  <a href="/pages/notifications" class="dropdown-item active">My Activity</a>
+                <% else %>
+                  <a href="/pages/notifications" class="dropdown-item">My Activity</a>
+                <% end %>            
 
                 <a class="dropdown-item" href="#">Help & Support</a>
                 <a class="dropdown-item" href="/pages/splash">Logout</a>

@@ -50,6 +50,9 @@ class PagesController < ApplicationController
   def yoga
   end
 
+  def perks2
+  end
+
   def credits25
   end
 

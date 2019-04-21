@@ -78,5 +78,6 @@ Rails.application.routes.draw do
   get 'pages/signup4'
   get 'pages/signup5'
   get 'pages/perks2'
+  get 'pages/company'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

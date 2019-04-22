@@ -203,6 +203,104 @@ class PagesController < ApplicationController
   def signup5
   end
 
+  def homeperks
+  end
+
+  def hubperks
+  end
+
+  def perksperks
+  end
+
+  def marketplaceperks
+  end
+
+  def financialperks
+  end
+
+  def learningperks
+  end
+
+  def premiumperks
+  end
+
+  def companyperks
+  end
+
+  def profileperks
+  end
+
+  def purchasesperks
+  end
+
+  def notificationsperks
+  end
+
+  def creditperks
+  end
+
+  def nikeperks
+  end
+
+  def virginperks
+  end
+
+  def johnperks
+  end
+
+  def splashemployee
+  end
+
+  def homerew
+  end
+
+  def hubrew
+  end
+
+  def perksrew
+  end
+
+  def marketplacerew
+  end
+
+  def financialrew
+  end
+
+  def learningrew
+  end
+
+  def premiumrew
+  end
+
+  def companyrew
+  end
+
+  def profilerew
+  end
+
+  def purchasesrew
+  end
+
+  def notificationsrew
+  end
+
+  def creditrew
+  end
+
+  def nikerew
+  end
+
+  def virginrew
+  end
+
+  def johnrew
+  end
+
+  def signup6
+  end
+
+
+
   def static
     render params[:page].underscore.to_s
   end

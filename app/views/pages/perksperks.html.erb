@@ -35,9 +35,9 @@
                 <% end %>
 
                 <% if current_page?(pages_purchases_path) -%>
-                  <a href="/pages/purchasesperks" class="dropdown-item active">My Redeemed Codes</a>
+                  <a href="/pages/purchasesperks" class="dropdown-item active">My Purchases & Redemptions</a>
                 <% else %>
-                  <a href="/pages/purchasesperks" class="dropdown-item">My Redeemed Codes</a>
+                  <a href="/pages/purchasesperks" class="dropdown-item">My Purchases & Redemptions</a>
                 <% end %>    
 
                 <% if current_page?(pages_notifications_path) -%>
@@ -75,14 +75,14 @@
 
                 <% end %>
 
-                <% if current_page?(pages_perksperks_path) or current_page?(pages_perks2_path) or current_page?(pages_holiday2_path) or current_page?(pages_medical_path) or current_page?(pages_dental_path) or current_page?(pages_beer_path) or current_page?(pages_asos_path) or current_page?(pages_yoga_path) or current_page?(pages_peer_path) or current_page?(pages_head_path) or current_page?(pages_netflix_path) or current_page?(pages_sanctus_path) or current_page?(pages_mental_path) -%>
+                <% if current_page?(pages_perks_path) or current_page?(pages_perksperks_path) or current_page?(pages_holiday2_path) or current_page?(pages_medical_path) or current_page?(pages_dental_path) or current_page?(pages_beer_path) or current_page?(pages_asos_path) or current_page?(pages_yoga_path) or current_page?(pages_peer_path) or current_page?(pages_head_path) or current_page?(pages_netflix_path) or current_page?(pages_sanctus_path) or current_page?(pages_mental_path) -%>
                   
-                  <li class="nav-item ml-1"><a href="/pages/perksperks" class="nav-link active">My Perks</a>
+                  <li class="nav-item ml-1"><a href="/pages/perksperks" class="nav-link active">Gifted Perks</a>
                   </li>
 
                 <% else %>
 
-                  <li class="nav-item ml-1"><a href="/pages/perksperks" class="nav-link">My Perks</a>
+                  <li class="nav-item ml-1"><a href="/pages/perksperks" class="nav-link">Gifted Perks</a>
                   </li>
 
                 <% end %>
@@ -105,18 +105,7 @@
                               <div class="text-small text-muted">Explore hundreds of everyday offers and get access to the things that matter most to you.</div>
                             </div>
                           </a>
-                          <a href="/pages/learningperks" class="list-group-item list-group-item-action d-flex align-items-center p-3">
-                            <div class="text-body ml-3">
-                              <span><h5>Learning & Development</h5></span>
-                              <div class="text-small text-muted">Access our carefully curated partners to help you learn, grow and develop both in and out of work.</div>
-                            </div>
-                          </a>
-                          <a href="/pages/premiumperks" class="list-group-item list-group-item-action d-flex align-items-center p-3">
-                            <div class="text-body ml-3">
-                              <span><h5>Health & Support</h5></span>
-                              <div class="text-small text-muted">Look after your health and get support when you need it most.</div>
-                            </div>
-                          </a>
+                          
                            <a href="/pages/companyperks" class="list-group-item list-group-item-action d-flex align-items-center p-3">
                             <div class="text-body ml-3">
                               <span><h5>Company Name Catalogue</h5></span>
@@ -141,112 +130,152 @@
 
 <div class="row pt-5 py-5 layer-2">
       <div class="container">
-
-
-
-
   <div class="col-xl-8 col-lg-10">
-      <h1 class="display-5">My Perks</h1>
-      <p class="lead mb-0">Here are the perks you've got access to help make your experience at Company Name as good as it can be.</p>
+      <h1 class="display-5">Gifted Perks</h1>
+      <p class="lead mb-0">Here are the perks you've been gifted to show you're valued, to celebrate your successes and embrace what makes your company unique.</p>
     </div>
   </div>
 </div>
 
-<section class="pt-0">
-  <div class="container">
-    <div class="row mb-4">
-      <div class="col col-md-12">
-        <ul data-isotope-filters data-isotope-id="projects" class="nav mb-3">
-          <li class="nav-item">
-            <a href="#" class="nav-link btn active" data-filter="*">See All</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link btn" data-filter="Gifted">Gifted</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link btn" data-filter="Purchases">My Purchases <i class="fa fa-diamond" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-        <hr>
-      </div>
+
+<div class="row">
+      <div class="container">
+        <div class="col-xl-12 col-lg-12">
+      <h3 class="display-5">Because you're part of Company Name <i class="fa fa-angle-right float-right space"></i> <i class="fa fa-angle-left float-right"></i></h3>
     </div>
+    <hr>
+  </div>
 
-    <%= render 'layouts/filterslearning2' %>
+</div>
 
 
-    <div class="row" data-isotope-collection data-isotope-id="projects">
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Gifted">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
         <a href="#">
           <img src="/placeholder.jpg" alt="Go Commerce" class="rounded mb-3">
           <h5 class="mb-0">2 Days Holiday</h5>
           <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Gifted">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
         <a href="#">
           <img src="/placeholder.jpg" alt="Tribe" class="rounded mb-3">
           <h5 class="mb-0">Medical Care</h5>
           <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Gifted">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
         <a href="#">
           <img src="/placeholder.jpg" alt="Beker EV" class="rounded mb-3">
           <h5 class="mb-0">100 Credits</h5>
           <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Gifted">
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
         <a href="#">
           <img src="/placeholder.jpg" alt="Beker EV" class="rounded mb-3">
           <h5 class="mb-0">Beer Friday</h5>
           <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
-      
-    
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Gifted">
-        <a href="#">
-          <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
-          <h5 class="mb-0"><strike>Free Coffee</strike> <a href="#" class="m-1 btn-sm btn-primary" data-toggle="modal" data-target="#sign-in-modal">Gift To Peer</a></h5>
-          <div class="text-small text-muted">Perkbox Gift available again in 4 days</div>
-        </a>
-      </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Gifted">
-        <a href="#">
-          <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
-          <h5 class="mb-0">Mental Health</h5>
-          <div class="text-small text-muted">Gifted by Perkbox</div>
-        </a>
-      </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Gifted">
-        <a href="#">
-          <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
-          <h5 class="mb-0">Councelling Online</h5>
-          <div class="text-small text-muted">Gifted by Perkbox</div>
-        </a>
-      </div>
-    <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Gifted">
+  </div>
+</div>
+
+
+<br>
+
+
+<div class="row">
+      <div class="container">
+        <div class="col-xl-12 col-lg-12">
+      <h3 class="display-5">Because you're a Manager</h3>
+    </div>
+    <hr>
+  </div>
+
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Branding">
         <a href="#">
           <img src="/placeholder.jpg" alt="Volkswagen Australia" class="rounded mb-3">
           <h5 class="mb-0">Headspace</h5>
           <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
-      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item="" data-category="Purchases" style="position: absolute; left: 0px; top: 0px;">
+  </div>
+</div>
+
+<br>
+
+
+
+<div class="row">
+      <div class="container">
+        <div class="col-xl-12 col-lg-12">
+      <h3 class="display-5">Just for you </h3>
+    </div>
+    <hr>
+  </div>
+
+</div>
+
+
+<div class="container">
+  <div class="row">
+      
+    <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Art Direction">
         <a href="#">
-          <img src="/placeholder.jpg" alt="Volkswagen Australia" class="rounded mb-3">
-          <h5 class="mb-0">Dental Cashplan</h5>
-          <div class="text-small text-muted">Purchased by you</div>
+          <img src="/placeholder.jpg" alt="Beker EV" class="rounded mb-3">
+          <h5 class="mb-0">Spotify Giftcard £30</h5>
+          <div class="text-small text-muted">Gifted by your company</div>
         </a>
       </div>
-  
-      
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+      <div class="container">
+        <div class="col-xl-12 col-lg-12">
+      <h3 class="display-5">Gifted by Perkbox</h3>
     </div>
+    <hr>
+  </div>
+
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Digital">
+        <a href="#">
+          <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
+          <h5 class="mb-0"><strike>Free Coffee</strike> <a href="#" class="m-1 btn-sm btn-primary" data-toggle="modal" data-target="#sign-in-modal">Gift To Peer</a></h5>
+          <div class="text-small text-muted">Gift available again in 4 days</div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Digital">
+        <a href="#">
+          <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
+          <h5 class="mb-0">Mental Health</h5>
+          <div class="text-small text-muted">Gifted by Perkbox</div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4" data-isotope-item data-category="Digital">
+        <a href="#">
+          <img src="/placeholder.jpg" alt="Leap iOS" class="rounded mb-3">
+          <h5 class="mb-0">Councelling Online</h5>
+          <div class="text-small text-muted">Gifted by Perkbox</div>
+        </a>
+      </div>
     
   </div>
-</section>
-
+</div>
 
 
 <br>

@@ -41,9 +41,9 @@
                 <% end %>
 
                 <% if current_page?(pages_purchases_path) -%>
-                  <a href="/pages/purchases" class="dropdown-item active">My Redeemed Codes</a>
+                  <a href="/pages/purchases" class="dropdown-item active">My Purchases & Redemptions</a>
                 <% else %>
-                  <a href="/pages/purchases" class="dropdown-item">My Redeemed Codes</a>
+                  <a href="/pages/purchases" class="dropdown-item">My Purchases & Redemptions</a>
                 <% end %>    
 
                 <% if current_page?(pages_notifications_path) -%>
@@ -83,12 +83,12 @@
 
                 <% if current_page?(pages_perks_path) or current_page?(pages_perks2_path) or current_page?(pages_holiday2_path) or current_page?(pages_medical_path) or current_page?(pages_dental_path) or current_page?(pages_beer_path) or current_page?(pages_asos_path) or current_page?(pages_yoga_path) or current_page?(pages_peer_path) or current_page?(pages_head_path) or current_page?(pages_netflix_path) or current_page?(pages_sanctus_path) or current_page?(pages_mental_path) -%>
                   
-                  <li class="nav-item ml-1"><a href="/pages/perks2" class="nav-link active">My Perks</a>
+                  <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link active">Gifted Perks</a>
                   </li>
 
                 <% else %>
 
-                  <li class="nav-item ml-1"><a href="/pages/perks2" class="nav-link">My Perks</a>
+                  <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link">Gifted Perks</a>
                   </li>
 
                 <% end %>

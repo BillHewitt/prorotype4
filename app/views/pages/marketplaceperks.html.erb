@@ -35,9 +35,9 @@
                 <% end %>
 
                 <% if current_page?(pages_purchases_path) -%>
-                  <a href="/pages/purchasesperks" class="dropdown-item active">My Redeemed Codes</a>
+                  <a href="/pages/purchasesperks" class="dropdown-item active">My Purchases & Redemptions</a>
                 <% else %>
-                  <a href="/pages/purchasesperks" class="dropdown-item">My Redeemed Codes</a>
+                  <a href="/pages/purchasesperks" class="dropdown-item">My Purchases & Redemptions</a>
                 <% end %>    
 
                 <% if current_page?(pages_notifications_path) -%>
@@ -77,12 +77,12 @@
 
                 <% if current_page?(pages_perks_path) or current_page?(pages_perks2_path) or current_page?(pages_holiday2_path) or current_page?(pages_medical_path) or current_page?(pages_dental_path) or current_page?(pages_beer_path) or current_page?(pages_asos_path) or current_page?(pages_yoga_path) or current_page?(pages_peer_path) or current_page?(pages_head_path) or current_page?(pages_netflix_path) or current_page?(pages_sanctus_path) or current_page?(pages_mental_path) -%>
                   
-                  <li class="nav-item ml-1"><a href="/pages/perksperks" class="nav-link active">My Perks</a>
+                  <li class="nav-item ml-1"><a href="/pages/perksperks" class="nav-link active">Gifted Perks</a>
                   </li>
 
                 <% else %>
 
-                  <li class="nav-item ml-1"><a href="/pages/perksperks" class="nav-link">My Perks</a>
+                  <li class="nav-item ml-1"><a href="/pages/perksperks" class="nav-link">Gifted Perks</a>
                   </li>
 
                 <% end %>
@@ -105,18 +105,7 @@
                               <div class="text-small text-muted">Explore hundreds of everyday offers and get access to the things that matter most to you.</div>
                             </div>
                           </a>
-                          <a href="/pages/learningperks" class="list-group-item list-group-item-action d-flex align-items-center p-3">
-                            <div class="text-body ml-3">
-                              <span><h5>Learning & Development</h5></span>
-                              <div class="text-small text-muted">Access our carefully curated partners to help you learn, grow and develop both in and out of work.</div>
-                            </div>
-                          </a>
-                          <a href="/pages/premiumperks" class="list-group-item list-group-item-action d-flex align-items-center p-3">
-                            <div class="text-body ml-3">
-                              <span><h5>Health & Support</h5></span>
-                              <div class="text-small text-muted">Look after your health and get support when you need it most.</div>
-                            </div>
-                          </a>
+                          
                            <a href="/pages/companyperks" class="list-group-item list-group-item-action d-flex align-items-center p-3">
                             <div class="text-body ml-3">
                               <span><h5>Company Name Catalogue</h5></span>
@@ -171,35 +160,7 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card card-body flex-row py-4">
-                  <div class="ml-3">
-                    <h4>
-                      Learning & Development
-                    </h4>
-                    <div class="avatar-author d-block">
-                      <p>Access our carefully curated partners to help you learn, grow and develop both in and out of work.</p>
-                      <a href="/pages/learningperks" class="btn btn-primary">Explore L & D</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card card-body flex-row py-4">
-                  <div class="ml-3">
-                    <h4>
-                      Health & Support
-                    </h4>
-                    <div class="avatar-author d-block">
-                      <p>Making usually hard-to-get workplace benefits accessible for everyone.</p>
-                      <a href="/pages/premiumperks" class="btn btn-primary">Explore Benefits</a>
-                    </div>
-                  </div>
-                </div>
+            
 
                 <div class="row">
               <div class="col-md-12">
@@ -210,7 +171,7 @@
                     </h4>
                     <div class="avatar-author d-block">
                       <p>We've created some bespoke company perks that you're able to purchase with your credit..</p>
-                      <a href="/pages/premiumperks" class="btn btn-primary">Explore Benefits</a>
+                      <a href="/pages/companyperks" class="btn btn-primary">Explore Benefits</a>
                     </div>
                   </div>
                 </div>

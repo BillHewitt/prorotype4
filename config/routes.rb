@@ -111,5 +111,6 @@ Rails.application.routes.draw do
   get 'pages/johnrew'
   get 'pages/splashemployee'
   get 'pages/signup6'
+  get 'pages/splashmanager'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

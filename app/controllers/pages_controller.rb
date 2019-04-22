@@ -299,6 +299,9 @@ class PagesController < ApplicationController
   def signup6
   end
 
+  def splashmanager
+  end
+
 
 
   def static

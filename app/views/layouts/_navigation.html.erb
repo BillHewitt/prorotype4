@@ -41,18 +41,18 @@
                 <% else %>
                   <a href="/pages/profile" class="dropdown-item">My Profile</a>
                 <% end %>
-                  
-                <% if current_page?(pages_recognition_path) -%>
-                  <a href="/pages/recognition" class="dropdown-item active">My Rewards & Recognition</a>
-                <% else %>
-                  <a href="/pages/recognition" class="dropdown-item">My Rewards & Recognition</a>
-                <% end %>
 
                 <% if current_page?(pages_purchases_path) -%>
                   <a href="/pages/purchases" class="dropdown-item active">My Purchases & Redemptions</a>
                 <% else %>
                   <a href="/pages/purchases" class="dropdown-item">My Purchases & Redemptions</a>
-                <% end %>    
+                <% end %>  
+                  
+                <% if current_page?(pages_recognition_path) -%>
+                  <a href="/pages/recognition" class="dropdown-item active">My Rewards & Recognition</a>
+                <% else %>
+                  <a href="/pages/recognition" class="dropdown-item">My Rewards & Recognition</a>
+                <% end %>  
 
                 <% if current_page?(pages_notifications_path) -%>
                   <a href="/pages/notifications" class="dropdown-item active">My Activity</a>
@@ -104,9 +104,9 @@
                 <li class="nav-item dropdown">
 
                   <% if current_page?(pages_financial_path) or current_page?(pages_learning_path) or current_page?(pages_perkbox_path) or current_page?(pages_premium_path) or current_page?(pages_nike_path) or current_page?(pages_virgin_path) or current_page?(pages_john_path) or current_page?(pages_youtube_path) or current_page?(pages_spotify_path) or current_page?(pages_asos2_path) or current_page?(pages_netflix2_path) or current_page?(pages_tesco_path) or current_page?(pages_franco_path) or current_page?(pages_bill_path) or current_page?(pages_apple_path) or current_page?(pages_adidas_path) or current_page?(pages_marketplace_path) or current_page?(pages_company_path) or current_page?(pages_lynda_path) or current_page?(pages_skillshare_path) or current_page?(pages_udemy_path) or current_page?(pages_audible_path) or current_page?(pages_critical_path) or current_page?(pages_amazon_path) or current_page?(pages_physio_path) or current_page?(pages_healthcashplan_path) or current_page?(pages_medinsurance_path) or current_page?(pages_financialadvice_path) or current_page?(pages_healthinsurance_path) or current_page?(pages_healthinsurance_path)  -%>
-                    <a href="/pages/perkbox" class="nav-link active dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explore Collections <i class="fa fa-diamond" aria-hidden="true"></i></a>
+                    <a href="/pages/perkbox" class="nav-link active dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explore The Collections</a>
                   <% else %>
-                    <a href="/pages/perkbox" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explore Collections <i class="fa fa-diamond" aria-hidden="true"></i></a>
+                    <a href="/pages/perkbox" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explore The Collections</a>
                   <% end %>
 
                   <div class="dropdown-menu row">

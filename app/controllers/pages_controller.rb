@@ -152,6 +152,9 @@ class PagesController < ApplicationController
   def audible
   end
 
+  def holiday3
+  end
+
   def udemy
   end
 

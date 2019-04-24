@@ -97,6 +97,14 @@ section.narrow {
   color: #ebebeb;
 }
 
+.nav-link.nav-link-icon.credit.active {
+  color: #ebebeb;
+}
+
+.nav-link.nav-link-icon.credit.active:hover {
+  color: #c1c1c1;
+}
+
 span.medium {
   font-size: 20px;
 }
@@ -190,3 +198,6 @@ display:none;
   color: #747e81;
 }
 
+.badge.badge-pill.badge-secondary.small {
+  font-size: 0.55rem;
+}

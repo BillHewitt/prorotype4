@@ -10,9 +10,17 @@
             <li class="nav-item">  
               <a href="#" class="nav-link nav-link-icon"><i class="fa fa-search" aria-hidden="true"></i></a>
             </li>
-            <li class="nav-item">  
-              <a href="/pages/credit" class="nav-link nav-link-icon credit"><i class="fa fa-diamond" aria-hidden="true"></i> 150 Credits</a>
-            </li>
+            
+            <% if current_page?(pages_credit_path) -%>
+              <li class="nav-item">  
+                <a href="/pages/credit" class="nav-link nav-link-icon credit active"><i class="fa fa-diamond" aria-hidden="true"></i> 150 Credits</a>
+              </li>
+            <% else %>
+              <li class="nav-item">  
+                <a href="/pages/credit" class="nav-link nav-link-icon credit"><i class="fa fa-diamond" aria-hidden="true"></i> 150 Credits</a>
+              </li>
+            <% end %>
+
             <li class="nav-item">  
               <a href="/pages/notifications" class="nav-link nav-link-icon"><i class="fa fa-bell" aria-hidden="true"></i></a>
             </li>
@@ -35,9 +43,9 @@
                 <% end %>
                   
                 <% if current_page?(pages_recognition_path) -%>
-                  <a href="/pages/recognition" class="dropdown-item active">My Reward & Recognition</a>
+                  <a href="/pages/recognition" class="dropdown-item active">My Rewards & Recognition</a>
                 <% else %>
-                  <a href="/pages/recognition" class="dropdown-item">My Reward & Recognition</a>
+                  <a href="/pages/recognition" class="dropdown-item">My Rewards & Recognition</a>
                 <% end %>
 
                 <% if current_page?(pages_purchases_path) -%>
@@ -71,62 +79,62 @@
 
                 <% if current_page?(pages_hub_path) -%>
                   
-                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link active">The Hub</a>
+                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link active">Spotify Hub</a>
                   </li>
 
                 <% else %>
 
-                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link">The Hub</a>
+                  <li class="nav-item ml-1"><a href="/pages/hub" class="nav-link">Spotify Hub</a>
                   </li>
 
                 <% end %>
 
-                <% if current_page?(pages_perks_path) or current_page?(pages_perks2_path) or current_page?(pages_holiday2_path) or current_page?(pages_medical_path) or current_page?(pages_dental_path) or current_page?(pages_beer_path) or current_page?(pages_asos_path) or current_page?(pages_yoga_path) or current_page?(pages_peer_path) or current_page?(pages_head_path) or current_page?(pages_netflix_path) or current_page?(pages_sanctus_path) or current_page?(pages_mental_path) -%>
+                <% if current_page?(pages_perks_path) or current_page?(pages_perks2_path) or current_page?(pages_holiday2_path) or current_page?(pages_medical_path) or current_page?(pages_dental_path) or current_page?(pages_beer_path) or current_page?(pages_asos_path) or current_page?(pages_yoga_path) or current_page?(pages_peer_path) or current_page?(pages_head_path) or current_page?(pages_netflix_path)  or current_page?(pages_debt_path) or current_page?(pages_eap_path) or current_page?(pages_mental_path) or current_page?(pages_councelling_path) or current_page?(pages_holiday3_path) -%>
                   
-                  <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link active">Gifted Perks</a>
+                  <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link active">Spotify Gifted</a>
                   </li>
 
                 <% else %>
 
-                  <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link">Gifted Perks</a>
+                  <li class="nav-item ml-1"><a href="/pages/perks" class="nav-link">Spotify Gifted</a>
                   </li>
 
                 <% end %>
 
                 <li class="nav-item dropdown">
 
-                  <% if current_page?(pages_financial_path) or current_page?(pages_learning_path) or current_page?(pages_perkbox_path) or current_page?(pages_premium_path) or current_page?(pages_nike_path) or current_page?(pages_virgin_path) or current_page?(pages_john_path) or current_page?(pages_youtube_path) or current_page?(pages_spotify_path) or current_page?(pages_asos2_path) or current_page?(pages_netflix2_path) or current_page?(pages_tesco_path) or current_page?(pages_franco_path) or current_page?(pages_bill_path) or current_page?(pages_apple_path) or current_page?(pages_adidas_path) -%>
-                    <a href="/pages/perkbox" class="nav-link active dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">The Marketplace <i class="fa fa-diamond" aria-hidden="true"></i></a>
+                  <% if current_page?(pages_financial_path) or current_page?(pages_learning_path) or current_page?(pages_perkbox_path) or current_page?(pages_premium_path) or current_page?(pages_nike_path) or current_page?(pages_virgin_path) or current_page?(pages_john_path) or current_page?(pages_youtube_path) or current_page?(pages_spotify_path) or current_page?(pages_asos2_path) or current_page?(pages_netflix2_path) or current_page?(pages_tesco_path) or current_page?(pages_franco_path) or current_page?(pages_bill_path) or current_page?(pages_apple_path) or current_page?(pages_adidas_path) or current_page?(pages_marketplace_path) or current_page?(pages_company_path) or current_page?(pages_lynda_path) or current_page?(pages_skillshare_path) or current_page?(pages_udemy_path) or current_page?(pages_audible_path) or current_page?(pages_critical_path) or current_page?(pages_amazon_path) or current_page?(pages_physio_path) or current_page?(pages_healthcashplan_path) or current_page?(pages_medinsurance_path) or current_page?(pages_financialadvice_path) or current_page?(pages_healthinsurance_path) or current_page?(pages_healthinsurance_path)  -%>
+                    <a href="/pages/perkbox" class="nav-link active dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explore Collections <i class="fa fa-diamond" aria-hidden="true"></i></a>
                   <% else %>
-                    <a href="/pages/perkbox" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">The Marketplace <i class="fa fa-diamond" aria-hidden="true"></i></a>
+                    <a href="/pages/perkbox" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Explore Collections <i class="fa fa-diamond" aria-hidden="true"></i></a>
                   <% end %>
 
                   <div class="dropdown-menu row">
                     <div class="col-5 px-0" data-dropdown-content>
                       <div class="bg-white rounded border shadow-lg o-hidden">
                         <div class="list-group list-group-flush">
+                          <a href="/pages/company" class="list-group-item list-group-item-action d-flex align-items-center p-3">
+                            <div class="text-body ml-3">
+                              <span><h5>Spotify Extras</h5></span>
+                              <div class="text-small text-muted">We've curated some bespoke company extras that you're able to purchase with your credit.</div>
+                            </div>
+                          </a>
                           <a href="/pages/financial" class="list-group-item list-group-item-action d-flex align-items-center p-3">
                             <div class="text-body ml-3">
                               <span><h5>Everyday Offers</h5></span>
-                              <div class="text-small text-muted">Explore hundreds of everyday offers and get access to the things that matter most to you.</div>
+                              <div class="text-small text-muted">Explore hundreds of everyday offers and make financial savings across a plethora of retailers.</div>
                             </div>
                           </a>
                           <a href="/pages/learning" class="list-group-item list-group-item-action d-flex align-items-center p-3">
                             <div class="text-body ml-3">
                               <span><h5>Learning & Development</h5></span>
-                              <div class="text-small text-muted">Access our carefully curated partners to help you learn, grow and develop both in and out of work.</div>
+                              <div class="text-small text-muted">From courses to books and beyond. Keep learning and growing so you can realise your potential.</div>
                             </div>
                           </a>
                           <a href="/pages/premium" class="list-group-item list-group-item-action d-flex align-items-center p-3">
                             <div class="text-body ml-3">
                               <span><h5>Health & Support</h5></span>
-                              <div class="text-small text-muted">Look after your health and get support when you need it most.</div>
-                            </div>
-                          </a>
-                           <a href="/pages/company" class="list-group-item list-group-item-action d-flex align-items-center p-3">
-                            <div class="text-body ml-3">
-                              <span><h5>Company Name Catalogue</h5></span>
-                              <div class="text-small text-muted">We've created some bespoke company perks that you're able to purchase with your credit.</div>
+                              <div class="text-small text-muted">Your health and wellbeing should be you number one. Get support in all the areas that matter most.</div>
                             </div>
                           </a>
                         </div>
